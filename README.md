@@ -57,7 +57,7 @@ Calcul du nombre d'adresses disponibles requis et du CIDR
 
 - Pôle informatique : le 2^n >= à 50 le plus proche est 2^6 (64), soit 2^6 -2 = 62 adresses disponibles et un CIDR de 32 - 6 = 26 soit /26
 - Pôle administratif : le 2^n >= à 20 le plus proche est 2^5 (32), soit 2^5 -2 = 30 adresses disponibles et  un CIDR de 32 - 5 = 27 soit /27
-- Pôle technicien : le 2^n >= à 15 le plus proche est 2^4 (16), sauf que le nombre d'adresse disponible est dans ce cas de 14 (2^4 - 2), il manque donc une adresse pour pouvoir raccorder les 15 équipements. Cela nécessite donc de passer sur le 2^n supérieur, soit 2^5 (32), pour un CIDR de 32 - 5 = 27 soit /27
+- Pôle technicien : le 2^n >= à 15 le plus proche est 2^4 (16), <b>sauf que le nombre d'adresse disponible est dans ce cas de 14 (2^4 - 2), il manque donc une adresse pour pouvoir raccorder les 15 équipements</b>. Cela nécessite donc de passer sur le 2^n supérieur, soit 2^5 (32), pour un CIDR de 32 - 5 = 27 soit /27
 - Pôle développement : le 2^n >= à 12 le plus proche est 2^4 (16), soit 2^4 -2 = 14 adresses disponibles et  un CIDR de 32 - 4 = 28 soit /28
 
 
