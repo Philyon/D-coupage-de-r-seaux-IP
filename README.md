@@ -1,6 +1,6 @@
 # Découpage de réseaux IP
 
-# Découpage symétrique :
+## Découpage symétrique :
 
 Avec le réseau `172.16.1.0/24` on a 254 adresses disponibles (256 - 2)
 On est sur un découpage pour 4 pôles, dont le plus gros compte 50 équipements. Le 2^n >= à 50 le plus proche est 2^6 (64), soit une CIDR de 32 - 6 = 26 soit /26.
@@ -9,25 +9,25 @@ Avec le découpage symétrique dans ces conditions on est sur un nombre d'adress
 
 Pour le réseau `172.16.1.0/24` on peut faire le découpage symétrique suivant :
 
-### Sous réseau 1 : Pôle informatique
+#### Sous réseau 1 : Pôle informatique
 Adresse de réseau : `172.16.1.0/26`
 Déblut de plage IP disponible : `172.16.1.1`
 Fin de plage IP disponible : `172.16.1.62`
 Adresse de broadcoast : `172.16.1.63`
 
-### Sous réseau 2 : Pôle développement
+#### Sous réseau 2 : Pôle développement
 Adresse de réseau : `172.16.1.64/26`
 Déblut de plage IP disponible : `172.16.1.65`
 Fin de plage IP disponible : `172.16.1.126`
 Adresse de broadcoast : `172.16.1.127`
 
-### Sous réseau 3 : Pôle administratif
+#### Sous réseau 3 : Pôle administratif
 Adresse de réseau : `172.16.1.128/26`
 Déblut de plage IP disponible : `172.16.1.129`
 Fin de plage IP disponible : `172.16.1.190`
 Adresse de broadcoast : `172.16.1.191`
 
-### Sous réseau 4 : Pôle technicien
+#### Sous réseau 4 : Pôle technicien
 Adresse de réseau : `172.16.1.192/26`
 Déblut de plage IP disponible : `172.16.1.193`
 Fin de plage IP disponible : `172.16.1.254`
@@ -35,7 +35,7 @@ Adresse de broadcoast : `172.16.1.255`
 
 Voici ce que ça donne résumé dans un tableau :
 
-#### Découpage symétrique
+##### Découpage symétrique
 | Pôle              | Adresse réseau | Adresse broadcoast | Adresse  début plage | Adresse fin plage |
 |------------------|---------------|---------------------|------------------------|----------------|
 | Informatique     | 172.16.1.0/26| 172.16.1.63|      172.16.1.1      |     172.16.1.62    |
@@ -44,7 +44,7 @@ Voici ce que ça donne résumé dans un tableau :
 | Technicien       | 172.16.1.192/26| 172.16.1.255|      172.16.1.193       |    172.16.1.254     |
 
 
-# Découpage asymétrique :
+## Découpage asymétrique :
 
 Avec le réseau `172.16.1.0/24` on a 254 adresses disponibles (256 - 2)
 On est sur un découpage pour 4 pôles, répartis ainsi par ordre décroissant de nombre d'équipements :
@@ -63,25 +63,25 @@ Calcul du nombre d'adresses disponibles requis et du CIDR
 
 Pour le réseau `172.16.1.0/24` on peut faire le découpage asymétrique suivant :
 
-### Sous réseau 1 : Pôle informatique
+#### Sous réseau 1 : Pôle informatique
 Adresse de réseau : `172.16.1.0/26`
 Déblut de plage IP disponible : `172.16.1.1`
 Fin de plage IP disponible : `172.16.1.62`
 Adresse de broadcoast : `172.16.1.63`
 
-### Sous réseau 2 : Pôle administratif
+#### Sous réseau 2 : Pôle administratif
 Adresse de réseau : `172.16.1.64/27`
 Déblut de plage IP disponible : `172.16.1.65`
 Fin de plage IP disponible : `172.16.1.94`
 Adresse de broadcoast : `172.16.1.95`
 
-### Sous réseau 3 : Pôle technicien
+#### Sous réseau 3 : Pôle technicien
 Adresse de réseau : `172.16.1.96/27`
 Déblut de plage IP disponible : `172.16.1.97`
 Fin de plage IP disponible : `172.16.1.126`
 Adresse de broadcoast : `172.16.1.127`
 
-### Sous réseau 4 : Pôle développement
+#### Sous réseau 4 : Pôle développement
 Adresse de réseau : `172.16.1.128/28`
 Déblut de plage IP disponible : `172.16.1.129`
 Fin de plage IP disponible : `172.16.1.142`
@@ -89,7 +89,7 @@ Adresse de broadcoast : `172.16.1.143`
 
 Voici ce que ça donne résumé dans un tableau :
 
-#### Découpage asymétrique
+##### Découpage asymétrique
 | Pôle              | Adresse réseau | Adresse broadcoast | Adresse  début plage | Adresse fin plage |
 |------------------|---------------|---------------------|------------------------|----------------|
 | Informatique     | 172.16.1.0/26| 172.16.1.63         |      172.16.1.1      |     172.16.1.62    |
