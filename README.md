@@ -10,28 +10,28 @@ Avec le découpage symétrique dans ces conditions on est sur un nombre d'adress
 Pour le réseau `172.16.1.0/24` on peut faire le découpage symétrique suivant :
 
 #### Sous réseau 1 : Pôle informatique
-Adresse de réseau : `172.16.1.0/26`
-Déblut de plage IP disponible : `172.16.1.1`
-Fin de plage IP disponible : `172.16.1.62`
-Adresse de broadcoast : `172.16.1.63`
+Adresse de réseau : `172.16.1.0/26`<br>
+Déblut de plage IP disponible : `172.16.1.1`<br>
+Fin de plage IP disponible : `172.16.1.62`<br>
+Adresse de broadcoast : `172.16.1.63`<br>
 
 #### Sous réseau 2 : Pôle développement
-Adresse de réseau : `172.16.1.64/26`
-Déblut de plage IP disponible : `172.16.1.65`
-Fin de plage IP disponible : `172.16.1.126`
-Adresse de broadcoast : `172.16.1.127`
+Adresse de réseau : `172.16.1.64/26`<br>
+Déblut de plage IP disponible : `172.16.1.65`<br>
+Fin de plage IP disponible : `172.16.1.126`<br>
+Adresse de broadcoast : `172.16.1.127`<br>
 
 #### Sous réseau 3 : Pôle administratif
-Adresse de réseau : `172.16.1.128/26`
-Déblut de plage IP disponible : `172.16.1.129`
-Fin de plage IP disponible : `172.16.1.190`
-Adresse de broadcoast : `172.16.1.191`
+Adresse de réseau : `172.16.1.128/26`<br>
+Déblut de plage IP disponible : `172.16.1.129`<br>
+Fin de plage IP disponible : `172.16.1.190`<br>
+Adresse de broadcoast : `172.16.1.191`<br>
 
 #### Sous réseau 4 : Pôle technicien
-Adresse de réseau : `172.16.1.192/26`
-Déblut de plage IP disponible : `172.16.1.193`
-Fin de plage IP disponible : `172.16.1.254`
-Adresse de broadcoast : `172.16.1.255`
+Adresse de réseau : `172.16.1.192/26`<br>
+Déblut de plage IP disponible : `172.16.1.193`<br>
+Fin de plage IP disponible : `172.16.1.254`<br>
+Adresse de broadcoast : `172.16.1.255`<br>
 
 Voici ce que ça donne résumé dans un tableau :
 
@@ -64,28 +64,28 @@ Calcul du nombre d'adresses disponibles requis et du CIDR
 Pour le réseau `172.16.1.0/24` on peut faire le découpage asymétrique suivant :
 
 #### Sous réseau 1 : Pôle informatique
-Adresse de réseau : `172.16.1.0/26`
-Déblut de plage IP disponible : `172.16.1.1`
-Fin de plage IP disponible : `172.16.1.62`
-Adresse de broadcoast : `172.16.1.63`
+Adresse de réseau : `172.16.1.0/26`<br>
+Déblut de plage IP disponible : `172.16.1.1`<br>
+Fin de plage IP disponible : `172.16.1.62`<br>
+Adresse de broadcoast : `172.16.1.63`<br>
 
 #### Sous réseau 2 : Pôle administratif
-Adresse de réseau : `172.16.1.64/27`
-Déblut de plage IP disponible : `172.16.1.65`
-Fin de plage IP disponible : `172.16.1.94`
-Adresse de broadcoast : `172.16.1.95`
+Adresse de réseau : `172.16.1.64/27`<br>
+Déblut de plage IP disponible : `172.16.1.65`<br>
+Fin de plage IP disponible : `172.16.1.94`<br>
+Adresse de broadcoast : `172.16.1.95`<br>
 
 #### Sous réseau 3 : Pôle technicien
-Adresse de réseau : `172.16.1.96/27`
-Déblut de plage IP disponible : `172.16.1.97`
-Fin de plage IP disponible : `172.16.1.126`
-Adresse de broadcoast : `172.16.1.127`
+Adresse de réseau : `172.16.1.96/27`<br>
+Déblut de plage IP disponible : `172.16.1.97`<br>
+Fin de plage IP disponible : `172.16.1.126`<br>
+Adresse de broadcoast : `172.16.1.127`<br>
 
 #### Sous réseau 4 : Pôle développement
-Adresse de réseau : `172.16.1.128/28`
-Déblut de plage IP disponible : `172.16.1.129`
-Fin de plage IP disponible : `172.16.1.142`
-Adresse de broadcoast : `172.16.1.143`
+Adresse de réseau : `172.16.1.128/28`<br>
+Déblut de plage IP disponible : `172.16.1.129`<br>
+Fin de plage IP disponible : `172.16.1.142`<br>
+Adresse de broadcoast : `172.16.1.143`<br>
 
 Voici ce que ça donne résumé dans un tableau :
 
